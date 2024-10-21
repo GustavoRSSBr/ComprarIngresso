@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etIngresso"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/id_ingresso"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etValor"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="@string/valor"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etTaxa"
+        app:layout_constraintStart_toStartOf="@+id/etIngresso"
+        app:layout_constraintTop_toBottomOf="@+id/etIngresso" />
+
+    <CheckBox
+        android:id="@+id/cbVip"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/vip"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprar"
+        app:layout_constraintStart_toStartOf="@+id/etTaxa"
+        app:layout_constraintTop_toBottomOf="@+id/etTaxa" />
+
+    <EditText
+        android:id="@+id/etTaxa"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="@string/taxa"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/cbVip"
+        app:layout_constraintStart_toStartOf="@+id/etValor"
+        app:layout_constraintTop_toBottomOf="@+id/etValor" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="283dp"
+        android:text="@string/comprar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbVip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

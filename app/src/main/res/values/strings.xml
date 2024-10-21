@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ComprarIngresso</string>
+    <string name="id_ingresso">Código do ingresso</string>
+    <string name="valor">Valor do ingresso</string>
+    <string name="comprar">Comprar</string>
+    <string name="vip">VIP</string>
+    <string name="voltar">Voltar</string>
+    <string name="taxa">Taxa de conveniência</string>
+</resources>
